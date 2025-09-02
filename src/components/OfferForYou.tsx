@@ -1,102 +1,87 @@
 const Services = () => {
   const services = [
     {
-      icon: "🏥",
-      title: "Clinic Websites",
-      description: "Professional medical websites with integrated booking systems, patient portals, and appointment management.",
+      icon: "🦷",
+      title: "General Dentistry",
+      description: "Comprehensive oral health care including preventive treatments, cleanings, and routine dental procedures.",
       features: [
-        "Online appointment booking",
-        "Patient registration forms",
-        "Doctor profiles and schedules",
-        "Medical service listings",
-        "Secure patient portal",
-        "Mobile-responsive design"
+        "Regular dental checkups",
+        "Professional teeth cleaning",
+        "Cavity fillings and restorations",
+        "Oral health assessments",
+        "Preventive care education",
+        "Dental X-rays and diagnostics"
       ]
     },
     {
-      icon: "✈️",
-      title: "Travel Agency Websites",
-      description: "Dynamic travel websites with booking engines, tour packages, and customer management systems.",
+      icon: "✨",
+      title: "Cosmetic Dentistry",
+      description: "Aesthetic dental treatments to enhance your smile and boost your confidence with beautiful, natural results.",
       features: [
-        "Tour package listings",
-        "Online booking system",
-        "Customer reviews and ratings",
-        "Payment integration",
-        "Travel blog integration",
-        "Multi-language support"
+        "Professional teeth whitening",
+        "Porcelain veneers",
+        "Smile design consultation",
+        "Composite bonding",
+        "Gum contouring",
+        "Complete smile makeovers"
       ]
     },
     {
-      icon: "🏠",
-      title: "Real Estate Websites",
-      description: "Comprehensive property websites with listing management, search filters, and lead generation tools.",
+      icon: "🔧",
+      title: "Restorative Dentistry",
+      description: "Advanced treatments to restore damaged or missing teeth, improving both function and appearance.",
       features: [
-        "Property listings with search",
-        "Advanced filtering options",
-        "Virtual tour integration",
-        "Lead capture forms",
-        "Agent profiles",
-        "Property comparison tools"
+        "Dental crowns and bridges",
+        "Root canal therapy",
+        "Dental implants",
+        "Tooth extraction",
+        "Dentures and partials",
+        "Emergency dental care"
       ]
     },
     {
       icon: "🛒",
-      title: "E-commerce Websites",
-      description: "Full-featured online stores with payment processing, inventory management, and customer accounts.",
+      title: "Orthodontics",
+      description: "Teeth straightening solutions for all ages, including traditional braces and modern clear aligners.",
       features: [
-        "Product catalog management",
-        "Secure payment processing",
-        "Shopping cart functionality",
-        "Order tracking system",
-        "Customer account management",
-        "Inventory management"
+        "Traditional metal braces",
+        "Clear ceramic braces",
+        "Invisalign treatment",
+        "Retainer therapy",
+        "Bite correction",
+        "Adult orthodontics"
       ]
     }
   ]
 
   return (
     <section id="services" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Video Background */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover transform scale-x-[-1] rotate-45"
-        >
-          <source src="/pics/fliphero.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        {/* Video overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/50"></div>
-      </div>
 
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10 z-5">
-        <div className="absolute top-20 left-20 w-32 h-32 bg-yellow-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-40 h-40 bg-yellow-500 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-yellow-500 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-20 w-32 h-32 bg-amber-500 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-40 h-40 bg-amber-500 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-amber-500 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container-custom text-center relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 glass-effect border border-yellow-500/30 rounded-full premium-text text-sm font-medium mb-8">
-            <span className="mr-2">💼</span>
-            Our Premium Services
+          <div className="inline-flex items-center px-4 py-2 glass-effect border border-amber-500/30 rounded-full premium-text text-sm font-medium mb-8">
+            <span className="mr-2">🦷</span>
+            Comprehensive Dental Services
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Web Development
+            Dental Care
             <span className="block premium-text">Services</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            We specialize in creating custom websites for various business sectors. 
-            Each project is crafted with attention to detail and modern web standards.
+            Dr. Yasser Khenniche provides comprehensive dental care services at Golden Dental Clinic. 
+            Each treatment is personalized with attention to detail and modern dental standards.
           </p>
 
           {/* Services Grid */}
@@ -123,69 +108,69 @@ const Services = () => {
           </div>
 
           {/* Process Section */}
-          <div className="bg-slate-800/30 backdrop-blur-md border border-yellow-500/30 rounded-3xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-white text-center mb-8">Our Development Process</h2>
+          <div className="bg-slate-800/30 backdrop-blur-md border border-amber-500/30 rounded-3xl p-8 mb-12">
+            <h2 className="text-3xl font-bold text-white text-center mb-8">Our Treatment Process</h2>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="w-16 h-16 premium-gradient rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-slate-900 text-2xl">📋</span>
                 </div>
-                <h4 className="text-white font-semibold mb-2">Discovery</h4>
-                <p className="text-gray-300 text-sm">Understanding your business needs and requirements</p>
+                <h4 className="text-white font-semibold mb-2">Consultation</h4>
+                <p className="text-gray-300 text-sm">Understanding your dental needs and concerns</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 premium-gradient rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <span className="text-slate-900 text-2xl">🎨</span>
+                  <span className="text-slate-900 text-2xl">🔍</span>
                 </div>
-                <h4 className="text-white font-semibold mb-2">Design</h4>
-                <p className="text-gray-300 text-sm">Creating stunning, user-friendly designs</p>
+                <h4 className="text-white font-semibold mb-2">Diagnosis</h4>
+                <p className="text-gray-300 text-sm">Comprehensive examination and treatment planning</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 premium-gradient rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <span className="text-slate-900 text-2xl">💻</span>
+                  <span className="text-slate-900 text-2xl">🦷</span>
                 </div>
-                <h4 className="text-white font-semibold mb-2">Development</h4>
-                <p className="text-gray-300 text-sm">Building your website with modern technologies</p>
+                <h4 className="text-white font-semibold mb-2">Treatment</h4>
+                <p className="text-gray-300 text-sm">Professional care using modern dental technology</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 premium-gradient rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <span className="text-slate-900 text-2xl">🚀</span>
+                  <span className="text-slate-900 text-2xl">✨</span>
                 </div>
-                <h4 className="text-white font-semibold mb-2">Launch</h4>
-                <p className="text-gray-300 text-sm">Deploying and maintaining your website</p>
+                <h4 className="text-white font-semibold mb-2">Follow-up</h4>
+                <p className="text-gray-300 text-sm">Ongoing care and maintenance for optimal oral health</p>
               </div>
             </div>
           </div>
 
           {/* Technologies Section */}
-          <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-3xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-white text-center mb-8">Technologies We Use</h2>
+          <div className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/30 rounded-3xl p-8 mb-12">
+            <h2 className="text-3xl font-bold text-white text-center mb-8">Modern Dental Equipment</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="premium-card p-6">
-                <h3 className="text-2xl font-bold text-white mb-4">Frontend</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Diagnostic</h3>
                 <ul className="text-gray-300 space-y-2">
-                  <li>• React.js & Next.js</li>
-                  <li>• TypeScript</li>
-                  <li>• Tailwind CSS</li>
-                  <li>• Responsive Design</li>
+                  <li>• Digital X-Ray Systems</li>
+                  <li>• Intraoral Cameras</li>
+                  <li>• 3D Imaging</li>
+                  <li>• Laser Diagnostics</li>
                 </ul>
               </div>
               <div className="premium-card p-6">
-                <h3 className="text-2xl font-bold text-white mb-4">Backend</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Treatment</h3>
                 <ul className="text-gray-300 space-y-2">
-                  <li>• Node.js & Express</li>
-                  <li>• Python & Django</li>
-                  <li>• Database Design</li>
-                  <li>• API Development</li>
+                  <li>• Laser Therapy</li>
+                  <li>• Ultrasonic Cleaners</li>
+                  <li>• Air Abrasion</li>
+                  <li>• Digital Impressions</li>
                 </ul>
               </div>
               <div className="premium-card p-6">
-                <h3 className="text-2xl font-bold text-white mb-4">Tools</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Comfort</h3>
                 <ul className="text-gray-300 space-y-2">
-                  <li>• Git & GitHub</li>
-                  <li>• Docker</li>
-                  <li>• AWS & Vercel</li>
-                  <li>• CI/CD Pipelines</li>
+                  <li>• Sedation Options</li>
+                  <li>• Pain-Free Injections</li>
+                  <li>• Ergonomic Chairs</li>
+                  <li>• Relaxing Atmosphere</li>
                 </ul>
               </div>
             </div>
@@ -193,24 +178,24 @@ const Services = () => {
 
           {/* CTA Section */}
           <div className="text-center">
-            <h3 className="text-3xl font-bold text-white mb-6">Ready to Start Your Project?</h3>
+            <h3 className="text-3xl font-bold text-white mb-6">Ready to Transform Your Smile?</h3>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Let's discuss your website needs and create something amazing together. 
-              Our team is ready to bring your vision to life.
+              Schedule your consultation with Dr. Yasser Khenniche and discover how we can help you achieve the perfect smile. 
+              Our team is ready to provide you with exceptional dental care.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="/contact" 
                 className="btn-primary text-lg px-8 py-4"
               >
-                🚀 Start Your Project
+                🚀 Book Appointment
               </a>
               <a 
                 href="/pricing" 
                 className="btn-secondary text-lg px-8 py-4"
               >
-                <span className="mr-2">💰</span>
-                View Pricing
+                <span className="mr-2">🦷</span>
+                View Services
               </a>
             </div>
           </div>

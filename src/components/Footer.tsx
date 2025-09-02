@@ -1,37 +1,37 @@
 const Footer = () => {
   return (
-    <footer className="glass-effect border-t border-yellow-500/30">
+    <footer className="glass-effect border-t border-amber-500/30">
       <div className="container-custom py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 premium-gradient rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-slate-900 font-bold text-lg">S</span>
+                <span className="text-slate-900 font-bold text-lg">🦷</span>
               </div>
               <div>
-                <h3 className="text-white font-bold text-xl">SITEDZ</h3>
-                <p className="premium-text text-sm">Web Development Agency</p>
+                <h3 className="text-white font-bold text-xl">Golden Dental Clinic</h3>
+                <p className="premium-text text-sm">Dr. Yasser Khenniche</p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Premier web development agency in Algeria, specializing in creating stunning websites 
-              for clinics, travel agencies, real estate, and e-commerce businesses.
+              Premium dental clinic in Kouba, Algeria, specializing in comprehensive dental care, 
+              cosmetic dentistry, and advanced treatments with modern technology.
             </p>
             <div className="flex space-x-4">
               <a 
-                href="mailto:autonomy.owner@gmail.com" 
-                className="premium-text hover:text-yellow-300 transition-colors"
+                href="tel:+213797339451" 
+                className="premium-text hover:text-amber-300 transition-colors"
               >
-                <span className="text-2xl">📧</span>
+                <span className="text-2xl">📞</span>
               </a>
               <a 
-                href="https://wa.me/+213797339451" 
+                href="https://www.instagram.com/dr_yasser_khenniche/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="premium-text hover:text-yellow-300 transition-colors"
+                className="premium-text hover:text-amber-300 transition-colors"
               >
-                <span className="text-2xl">💬</span>
+                <span className="text-2xl">📱</span>
               </a>
             </div>
           </div>
@@ -41,16 +41,16 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-gray-300 hover:text-yellow-400 transition-colors">Home</a>
+                <a href="#home" className="text-gray-300 hover:text-amber-400 transition-colors">Home</a>
               </li>
               <li>
-                <a href="#about" className="text-gray-300 hover:text-yellow-400 transition-colors">About</a>
+                <a href="#about" className="text-gray-300 hover:text-amber-400 transition-colors">About</a>
               </li>
               <li>
-                <a href="#services" className="text-gray-300 hover:text-yellow-400 transition-colors">Services</a>
+                <a href="#services" className="text-gray-300 hover:text-amber-400 transition-colors">Services</a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-300 hover:text-yellow-400 transition-colors">Contact</a>
+                <a href="#contact" className="text-gray-300 hover:text-amber-400 transition-colors">Contact</a>
               </li>
             </ul>
           </div>
@@ -61,39 +61,39 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center">
                 <span className="mr-2">📍</span>
-                Algeria
-              </li>
-              <li className="flex items-center">
-                <span className="mr-2">📧</span>
-                autonomy.owner@gmail.com
+                Cité les annassers 2, Kouba
               </li>
               <li className="flex items-center">
                 <span className="mr-2">📞</span>
                 0797339451
+              </li>
+              <li className="flex items-center">
+                <span className="mr-2">📱</span>
+                @dr_yasser_khenniche
               </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-yellow-500/30 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-amber-500/30 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2024 SITEDZ Web Development Agency. All rights reserved.
+            © 2024 Golden Dental Clinic - Dr. Yasser Khenniche. All rights reserved.
           </div>
           <div className="flex space-x-6">
             <a 
-              href="mailto:autonomy.owner@gmail.com" 
-              className="premium-text hover:text-yellow-300 transition-colors text-sm"
+              href="tel:+213797339451" 
+              className="premium-text hover:text-amber-300 transition-colors text-sm"
             >
-              Get Free Quote
+              Book Appointment
             </a>
             <a 
-              href="https://wa.me/+213797339451" 
+              href="https://www.instagram.com/dr_yasser_khenniche/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="premium-text hover:text-yellow-300 transition-colors text-sm"
+              className="premium-text hover:text-amber-300 transition-colors text-sm"
             >
-              WhatsApp Us
+              Follow Us
             </a>
           </div>
         </div>

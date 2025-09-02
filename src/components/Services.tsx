@@ -1,22 +1,22 @@
 const Services = () => {
   const services = [
     {
-      icon: "💬",
-      title: "Interactive Debates",
-      description: "Engage in thought-provoking discussions on current events, technology, culture, and more.",
-      features: ["Real-world topics", "Structured format", "Peer feedback"]
+      icon: "🦷",
+      title: "General Dentistry",
+      description: "Comprehensive dental care including cleanings, fillings, and preventive treatments.",
+      features: ["Routine cleanings", "Dental fillings", "Preventive care"]
     },
     {
-      icon: "🤝",
-      title: "Networking Sessions",
-      description: "Connect with like-minded individuals and build professional relationships.",
-      features: ["Professional networking", "Cultural exchange", "Community building"]
+      icon: "✨",
+      title: "Cosmetic Dentistry",
+      description: "Enhance your smile with professional teeth whitening and cosmetic treatments.",
+      features: ["Teeth whitening", "Veneers", "Smile makeovers"]
     },
     {
-      icon: "📈",
-      title: "Skill Development",
-      description: "Improve your English speaking, listening, and critical thinking skills.",
-      features: ["Public speaking", "Critical thinking", "Leadership skills"]
+      icon: "🔧",
+      title: "Restorative Dentistry",
+      description: "Restore damaged teeth with crowns, bridges, and advanced dental procedures.",
+      features: ["Dental crowns", "Bridges", "Root canal therapy"]
     }
   ]
 
@@ -28,7 +28,7 @@ const Services = () => {
             Our <span className="premium-text">Services</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Join our comprehensive English development program designed for intermediate to advanced speakers.
+            Comprehensive dental care services provided by Dr. Yasser Khenniche at Golden Dental Clinic.
           </p>
         </div>
 
@@ -54,31 +54,31 @@ const Services = () => {
         {/* Pricing Section */}
         <div className="premium-card p-8">
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-white mb-4">Simple & Transparent Pricing</h3>
-            <p className="text-gray-300">No hidden fees, no long-term commitments</p>
+            <h3 className="text-3xl font-bold text-white mb-4">Professional Dental Care</h3>
+            <p className="text-gray-300">Quality treatments with transparent pricing</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Pricing Card */}
             <div className="premium-gradient p-8 rounded-2xl text-center shadow-2xl">
-              <div className="text-6xl font-bold text-slate-900 mb-2">500 DA</div>
-              <div className="text-slate-900 text-lg mb-6">Per Session</div>
+              <div className="text-6xl font-bold text-slate-900 mb-2">From 5,000 DA</div>
+              <div className="text-slate-900 text-lg mb-6">Starting Price</div>
               <ul className="space-y-3 text-slate-900 text-left">
                 <li className="flex items-center">
                   <span className="mr-3">✓</span>
-                  2-hour interactive session
+                  Professional dental examination
                 </li>
                 <li className="flex items-center">
                   <span className="mr-3">✓</span>
-                  Professional guidance
+                  Personalized treatment plan
                 </li>
                 <li className="flex items-center">
                   <span className="mr-3">✓</span>
-                  Networking opportunities
+                  Modern dental technology
                 </li>
                 <li className="flex items-center">
                   <span className="mr-3">✓</span>
-                  Skill development materials
+                  Comfortable treatment environment
                 </li>
               </ul>
             </div>
@@ -86,37 +86,37 @@ const Services = () => {
             {/* Requirements */}
             <div className="space-y-6">
               <div className="premium-card p-6">
-                <h4 className="text-xl font-bold text-white mb-4">Requirements to Join</h4>
+                <h4 className="text-xl font-bold text-white mb-4">What to Expect</h4>
                 <div className="space-y-3">
                   <div className="flex items-center text-gray-300">
                     <span className="premium-text mr-3">🎯</span>
-                    Age: 17-35 years old
+                    Thorough dental examination
                   </div>
                   <div className="flex items-center text-gray-300">
                     <span className="premium-text mr-3">📚</span>
-                    English Level: Intermediate or Advanced
+                    Detailed treatment explanation
                   </div>
                   <div className="flex items-center text-gray-300">
                     <span className="premium-text mr-3">💬</span>
-                    Willingness to participate actively
+                    Comfortable treatment experience
                   </div>
                 </div>
               </div>
 
               <div className="premium-card p-6">
-                <h4 className="text-xl font-bold text-white mb-4">What You'll Get</h4>
+                <h4 className="text-xl font-bold text-white mb-4">Treatment Benefits</h4>
                 <div className="space-y-3">
                   <div className="flex items-center text-gray-300">
                     <span className="premium-text mr-3">🌟</span>
-                    Improved English speaking skills
+                    Improved oral health
                   </div>
                   <div className="flex items-center text-gray-300">
                     <span className="premium-text mr-3">🤝</span>
-                    Professional network connections
+                    Enhanced smile confidence
                   </div>
                   <div className="flex items-center text-gray-300">
                     <span className="premium-text mr-3">📈</span>
-                    Personal development opportunities
+                    Long-lasting dental health
                   </div>
                 </div>
               </div>

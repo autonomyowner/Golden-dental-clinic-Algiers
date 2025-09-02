@@ -1,140 +1,125 @@
 const Pricing = () => {
   const plans = [
     {
-      name: "Starter",
-      price: "150,000",
+      name: "Basic Care",
+      price: "8,000",
       currency: "DA",
-      period: "one-time",
-      description: "Perfect for small businesses and startups",
+      period: "per visit",
+      description: "Essential dental care for maintaining oral health",
       features: [
-        "Responsive website design",
-        "Up to 5 pages",
-        "Contact form",
-        "Basic SEO optimization",
-        "Mobile-friendly design",
-        "1 month of support",
-        "Basic analytics setup"
+        "Comprehensive dental examination",
+        "Professional teeth cleaning",
+        "Oral health consultation",
+        "Basic X-rays if needed",
+        "Preventive care advice",
+        "Treatment plan discussion",
+        "Follow-up appointment included"
       ],
       popular: false,
-      cta: "Get Started",
+      cta: "Book Now",
       color: "border-blue-500"
     },
     {
-      name: "Professional",
-      price: "350,000",
+      name: "Complete Care",
+      price: "15,000",
       currency: "DA",
-      period: "one-time",
-      description: "Ideal for growing businesses and agencies",
+      period: "per treatment",
+      description: "Comprehensive dental treatments for optimal oral health",
       features: [
-        "Everything in Starter",
-        "Up to 10 pages",
-        "Booking system integration",
-        "Advanced SEO optimization",
-        "Social media integration",
-        "3 months of support",
-        "Google Analytics setup",
-        "Performance optimization",
-        "Content management system"
+        "Everything in Basic Care",
+        "Dental fillings and restorations",
+        "Advanced diagnostic imaging",
+        "Cosmetic consultation",
+        "Teeth whitening options",
+        "Priority appointment scheduling",
+        "Emergency care access",
+        "6-month follow-up included",
+        "Payment plan options"
       ],
       popular: true,
       cta: "Most Popular",
-      color: "border-yellow-500"
+      color: "border-amber-500"
     },
     {
-      name: "Enterprise",
-      price: "750,000",
+      name: "Premium Care",
+      price: "35,000",
       currency: "DA",
-      period: "one-time",
-      description: "Complete solution for large businesses",
+      period: "per treatment",
+      description: "Advanced dental treatments and cosmetic procedures",
       features: [
-        "Everything in Professional",
-        "Unlimited pages",
-        "E-commerce functionality",
-        "Custom booking system",
-        "Multi-language support",
-        "6 months of support",
-        "Advanced security features",
-        "Custom integrations",
-        "Priority support",
-        "Performance monitoring",
-        "Backup & maintenance"
+        "Everything in Complete Care",
+        "Cosmetic dentistry procedures",
+        "Dental implant consultation",
+        "Advanced restorative work",
+        "Orthodontic evaluation",
+        "Sedation options available",
+        "Specialist referrals included",
+        "VIP treatment experience",
+        "Flexible payment plans",
+        "Lifetime consultation access",
+        "Emergency 24/7 support"
       ],
       popular: false,
-      cta: "Get Enterprise",
+      cta: "Premium Care",
       color: "border-purple-500"
     }
   ]
 
   const addons = [
     {
-      name: "SEO Package",
-      price: "50,000",
-      description: "Advanced SEO optimization and keyword research",
-      features: ["Keyword research", "On-page SEO", "Technical SEO audit", "3 months monitoring"]
+      name: "Teeth Whitening",
+      price: "12,000",
+      description: "Professional teeth whitening treatment",
+      features: ["In-office whitening session", "Take-home maintenance kit", "Results guaranteed", "6-month touch-up included"]
     },
     {
-      name: "E-commerce Setup",
-      price: "200,000",
-      description: "Complete online store with payment processing",
-      features: ["Product catalog", "Payment integration", "Order management", "Inventory system"]
+      name: "Dental Implant",
+      price: "80,000",
+      description: "Single tooth implant with crown",
+      features: ["Titanium implant placement", "Custom crown fitting", "Healing period monitoring", "Lifetime warranty"]
     },
     {
-      name: "Booking System",
-      price: "100,000",
-      description: "Custom appointment booking and scheduling",
-      features: ["Online booking", "Calendar integration", "Email notifications", "Admin dashboard"]
+      name: "Orthodontic Treatment",
+      price: "150,000",
+      description: "Complete orthodontic treatment plan",
+      features: ["Initial consultation", "Custom treatment plan", "Regular adjustments", "Retainer included"]
     },
     {
-      name: "Maintenance Plan",
-      price: "25,000",
-      description: "Monthly maintenance and updates",
-      features: ["Security updates", "Performance monitoring", "Backup management", "24/7 support"]
+      name: "Emergency Care",
+      price: "5,000",
+      description: "After-hours emergency dental care",
+      features: ["24/7 availability", "Pain relief treatment", "Emergency procedures", "Follow-up care"]
     }
   ]
 
   return (
     <section id="pricing" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Video Background */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover transform scale-x-[-1] rotate-45"
-        >
-          <source src="/pics/fliphero.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        {/* Video overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/50"></div>
-      </div>
 
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10 z-5">
-        <div className="absolute top-20 left-20 w-32 h-32 bg-yellow-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-40 h-40 bg-yellow-500 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-yellow-500 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-20 w-32 h-32 bg-amber-500 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-40 h-40 bg-amber-500 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-amber-500 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container-custom text-center relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 glass-effect border border-yellow-500/30 rounded-full premium-text text-sm font-medium mb-8">
-            <span className="mr-2">💰</span>
-            Transparent Pricing - No Hidden Fees
+          <div className="inline-flex items-center px-4 py-2 glass-effect border border-amber-500/30 rounded-full premium-text text-sm font-medium mb-8">
+            <span className="mr-2">🦷</span>
+            Quality Dental Care - Transparent Pricing
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Choose Your
-            <span className="block premium-text">Perfect Plan</span>
+            <span className="block premium-text">Dental Care</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Transparent pricing with everything you need to succeed online. 
-            All plans include hosting, domain, and ongoing support.
+            Professional dental care with transparent pricing and no hidden fees. 
+            All treatments include consultation, follow-up care, and our guarantee of satisfaction.
           </p>
 
           {/* Pricing Plans */}
@@ -142,11 +127,11 @@ const Pricing = () => {
             {plans.map((plan, index) => (
               <div 
                 key={index} 
-                className={`premium-card p-8 relative ${plan.popular ? 'ring-2 ring-yellow-500 scale-105' : ''}`}
+                className={`premium-card p-8 relative ${plan.popular ? 'ring-2 ring-amber-500 scale-105' : ''}`}
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-yellow-500 text-slate-900 px-4 py-2 rounded-full text-sm font-bold">
+                    <span className="bg-amber-500 text-slate-900 px-4 py-2 rounded-full text-sm font-bold">
                       ⭐ Most Popular
                     </span>
                   </div>
@@ -173,8 +158,8 @@ const Pricing = () => {
                 </ul>
 
                 <a 
-                  href="mailto:autonomy.owner@gmail.com?subject=Interested in Pricing Plan - {plan.name}" 
-                  className={`btn-primary w-full text-center ${plan.popular ? 'bg-yellow-500 hover:bg-yellow-600' : ''}`}
+                  href="tel:0797339451" 
+                  className={`btn-primary w-full text-center ${plan.popular ? 'bg-amber-500 hover:bg-amber-600' : ''}`}
                 >
                   {plan.cta}
                 </a>
@@ -183,10 +168,10 @@ const Pricing = () => {
           </div>
 
           {/* Add-ons Section */}
-          <div className="bg-slate-800/30 backdrop-blur-md border border-yellow-500/30 rounded-3xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-white text-center mb-8">Additional Services</h2>
+          <div className="bg-slate-800/30 backdrop-blur-md border border-amber-500/30 rounded-3xl p-8 mb-12">
+            <h2 className="text-3xl font-bold text-white text-center mb-8">Specialized Services</h2>
             <p className="text-gray-300 mb-8 max-w-3xl mx-auto">
-              Enhance your website with these powerful add-ons. Perfect for businesses that need extra functionality.
+              Additional dental services to enhance your oral health. Perfect for comprehensive dental care.
             </p>
             
             <div className="grid md:grid-cols-2 gap-6">
@@ -211,10 +196,10 @@ const Pricing = () => {
                     ))}
                   </ul>
                   <a 
-                    href="mailto:autonomy.owner@gmail.com?subject=Interested in Add-on - {addon.name}" 
+                    href="tel:0797339451" 
                     className="btn-secondary w-full text-center text-sm"
                   >
-                    Add This Service
+                    Book This Service
                   </a>
                 </div>
               ))}
@@ -222,63 +207,63 @@ const Pricing = () => {
           </div>
 
           {/* Why Choose Us */}
-          <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-3xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-white text-center mb-8">Why Choose Our Pricing?</h2>
+          <div className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/30 rounded-3xl p-8 mb-12">
+            <h2 className="text-3xl font-bold text-white text-center mb-8">Why Choose Golden Dental Clinic?</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 premium-gradient rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-slate-900 text-2xl">💎</span>
                 </div>
                 <h4 className="text-white font-semibold mb-2">Premium Quality</h4>
-                <p className="text-gray-300 text-sm">All websites built with modern technologies and best practices</p>
+                <p className="text-gray-300 text-sm">All treatments using modern dental technology and best practices</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 premium-gradient rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-slate-900 text-2xl">🛡️</span>
                 </div>
                 <h4 className="text-white font-semibold mb-2">No Hidden Costs</h4>
-                <p className="text-gray-300 text-sm">Transparent pricing with everything included upfront</p>
+                <p className="text-gray-300 text-sm">Transparent pricing with all costs explained upfront</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 premium-gradient rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-slate-900 text-2xl">🎯</span>
                 </div>
-                <h4 className="text-white font-semibold mb-2">Results Driven</h4>
-                <p className="text-gray-300 text-sm">Websites designed to convert visitors into customers</p>
+                <h4 className="text-white font-semibold mb-2">Results Focused</h4>
+                <p className="text-gray-300 text-sm">Treatments designed to achieve optimal oral health and beautiful smiles</p>
               </div>
             </div>
           </div>
 
           {/* FAQ Section */}
-          <div className="bg-slate-800/30 backdrop-blur-md border border-yellow-500/30 rounded-3xl p-8 mb-12">
+          <div className="bg-slate-800/30 backdrop-blur-md border border-amber-500/30 rounded-3xl p-8 mb-12">
             <h2 className="text-3xl font-bold text-white text-center mb-8">Frequently Asked Questions</h2>
             <div className="grid md:grid-cols-2 gap-8 text-left">
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-white font-semibold mb-2">How long does it take to build my website?</h4>
-                  <p className="text-gray-300 text-sm">Typically 2-4 weeks depending on the complexity and plan chosen.</p>
+                  <h4 className="text-white font-semibold mb-2">How long does a typical treatment take?</h4>
+                  <p className="text-gray-300 text-sm">Most treatments take 30-60 minutes, with complex procedures scheduled for longer appointments.</p>
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold mb-2">Do you provide hosting and domain?</h4>
-                  <p className="text-gray-300 text-sm">Yes! All plans include 1 year of hosting and domain registration.</p>
+                  <h4 className="text-white font-semibold mb-2">Do you accept insurance?</h4>
+                  <p className="text-gray-300 text-sm">We work with most major insurance providers and offer payment plans for uninsured patients.</p>
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold mb-2">Can I make changes after launch?</h4>
-                  <p className="text-gray-300 text-sm">Absolutely! We provide support and can make updates as needed.</p>
+                  <h4 className="text-white font-semibold mb-2">What if I need emergency dental care?</h4>
+                  <p className="text-gray-300 text-sm">We provide 24/7 emergency contact and after-hours care for urgent dental needs.</p>
                 </div>
               </div>
               <div className="space-y-6">
                 <div>
                   <h4 className="text-white font-semibold mb-2">What payment methods do you accept?</h4>
-                  <p className="text-gray-300 text-sm">We accept bank transfers, cash payments, and mobile money.</p>
+                  <p className="text-gray-300 text-sm">We accept cash, credit cards, bank transfers, and offer flexible payment plans.</p>
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold mb-2">Do you provide training?</h4>
-                  <p className="text-gray-300 text-sm">Yes! We provide training on how to manage your website content.</p>
+                  <h4 className="text-white font-semibold mb-2">Do you provide oral health education?</h4>
+                  <p className="text-gray-300 text-sm">Yes! We provide comprehensive education on proper oral hygiene and preventive care.</p>
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold mb-2">Is there a maintenance fee?</h4>
-                  <p className="text-gray-300 text-sm">Basic maintenance is included. Premium maintenance is available as an add-on.</p>
+                  <h4 className="text-white font-semibold mb-2">Are follow-up visits included?</h4>
+                  <p className="text-gray-300 text-sm">Follow-up visits are included in most treatment plans to ensure optimal healing and results.</p>
                 </div>
               </div>
             </div>
@@ -286,26 +271,26 @@ const Pricing = () => {
 
           {/* CTA Section */}
           <div className="text-center">
-            <h3 className="text-3xl font-bold text-white mb-6">Ready to Start Your Project?</h3>
+            <h3 className="text-3xl font-bold text-white mb-6">Ready to Transform Your Smile?</h3>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Get a free consultation and custom quote tailored to your specific needs. 
-              No obligation, just expert advice.
+              Schedule your consultation with Dr. Yasser Khenniche for personalized dental care. 
+              No obligation, just professional advice and a path to better oral health.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="mailto:autonomy.owner@gmail.com?subject=Free Consultation Request" 
+                href="tel:0797339451" 
                 className="btn-primary text-lg px-8 py-4"
               >
-                🚀 Get Free Consultation
+                🚀 Book Consultation
               </a>
               <a 
-                href="https://wa.me/+213797339451?text=Hi! I'm interested in your web development services. Can you tell me more about your pricing?" 
+                href="https://www.instagram.com/dr_yasser_khenniche/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-secondary text-lg px-8 py-4"
               >
-                <span className="mr-2">💬</span>
-                WhatsApp Us
+                <span className="mr-2">📱</span>
+                Follow Us
               </a>
             </div>
           </div>

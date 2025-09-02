@@ -43,7 +43,7 @@ const Locations = () => {
                 <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                   location.status === "Active" 
                     ? "bg-green-500/20 text-green-400 border border-green-400/30"
-                    : "bg-yellow-500/20 text-yellow-400 border border-yellow-400/30"
+                    : "bg-amber-500/20 text-amber-400 border border-amber-400/30"
                 }`}>
                   {location.status}
                 </span>
@@ -86,7 +86,7 @@ const Locations = () => {
                 href={location.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center premium-text hover:text-yellow-300 transition-colors"
+                className="inline-flex items-center premium-text hover:text-amber-300 transition-colors"
               >
                 <span className="mr-2">📍</span>
                 View on Google Maps

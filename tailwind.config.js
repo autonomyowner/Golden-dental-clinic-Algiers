@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'hive-blue': '#3b82f6', // blue-500
-        'hive-slate': '#0f172a',
-        'hive-blue-light': '#60a5fa', // blue-400 for highlights
-        'hive-blue-dark': '#1e40af', // blue-700 for darker accents
+        'golden-amber': '#f59e0b', // amber-500
+        'golden-slate': '#0f172a',
+        'golden-amber-light': '#fbbf24', // amber-400 for highlights
+        'golden-amber-dark': '#d97706', // amber-600 for darker accents
       },
       backgroundImage: {
-        'gradient-hive': 'linear-gradient(to bottom right, #0f172a, #1e3a8a, #0f172a)', // slate-900, blue-900, slate-900
+        'gradient-golden': 'linear-gradient(to bottom right, #0f172a, #f59e0b, #0f172a)', // slate-900, amber-500, slate-900
       }
     },
   },

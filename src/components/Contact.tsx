@@ -1,25 +1,25 @@
 const Contact = () => {
   const contactInfo = [
     {
-      name: "Email",
-      value: "autonomy.owner@gmail.com",
-      icon: "📧",
-      link: "mailto:autonomy.owner@gmail.com",
-      description: "Send us your project requirements"
-    },
-    {
       name: "Phone",
       value: "0797339451",
       icon: "📞",
       link: "tel:+213797339451",
-      description: "Call us for immediate consultation"
+      description: "Call for appointment booking"
     },
     {
-      name: "WhatsApp",
-      value: "0797339451",
-      icon: "💬",
-      link: "https://wa.me/+213797339451",
-      description: "Quick chat about your project"
+      name: "Location",
+      value: "Cité les annassers 2, Kouba",
+      icon: "📍",
+      link: "#",
+      description: "Visit our dental clinic"
+    },
+    {
+      name: "Instagram",
+      value: "@dr_yasser_khenniche",
+      icon: "📱",
+      link: "https://www.instagram.com/dr_yasser_khenniche/",
+      description: "Follow us for dental tips"
     }
   ]
 
@@ -31,7 +31,7 @@ const Contact = () => {
             Get in <span className="premium-text">Touch</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to start your web development project? Contact our team and let's create something amazing together.
+            Ready to transform your smile? Contact Dr. Yasser Khenniche at Golden Dental Clinic for professional dental care.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-white font-semibold mb-1">Location</h4>
                     <p className="text-gray-300 text-sm">
-                      Algeria - Serving clients nationwide
+                      Cité les annassers 2, Kouba, Algeria
                     </p>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-white font-semibold mb-1">Business Hours</h4>
                     <p className="text-gray-300 text-sm">
-                      Monday - Friday: 9:00 AM - 6:00 PM
+                      Monday - Saturday: 9:00 AM - 7:00 PM
                     </p>
                   </div>
                 </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-white font-semibold mb-1">Services</h4>
                     <p className="text-gray-300 text-sm">
-                      Custom websites, E-commerce, Booking systems
+                      General, Cosmetic, Restorative, Emergency Dentistry
                     </p>
                   </div>
                 </div>
@@ -93,23 +93,23 @@ const Contact = () => {
             </div>
 
             <div className="premium-gradient p-8 rounded-2xl shadow-2xl">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Why Choose Our Agency?</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Why Choose Golden Dental Clinic?</h3>
               <ul className="space-y-3 text-slate-900">
                 <li className="flex items-center">
                   <span className="mr-3">✓</span>
-                  Expert team of 4 professional developers
+                  Experienced Dr. Yasser Khenniche
                 </li>
                 <li className="flex items-center">
                   <span className="mr-3">✓</span>
-                  Modern, responsive design approach
+                  Modern dental technology and techniques
                 </li>
                 <li className="flex items-center">
                   <span className="mr-3">✓</span>
-                  Complete project management
+                  Comprehensive dental services
                 </li>
                 <li className="flex items-center">
                   <span className="mr-3">✓</span>
-                  Ongoing support and maintenance
+                  Personalized care and follow-up
                 </li>
               </ul>
             </div>
@@ -142,15 +142,15 @@ const Contact = () => {
             ))}
 
             <div className="premium-card p-6">
-              <h3 className="text-xl font-bold text-white mb-4">Start Your Project</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Book Your Appointment</h3>
               <p className="text-gray-300 mb-4">
-                Ready to build your website? Contact us for a free consultation and quote.
+                Ready for professional dental care? Contact us to schedule your consultation.
               </p>
               <a 
-                href="mailto:autonomy.owner@gmail.com" 
+                href="tel:0797339451" 
                 className="btn-primary w-full text-center"
               >
-                Get Free Quote
+                Book Appointment
               </a>
             </div>
           </div>
@@ -158,26 +158,26 @@ const Contact = () => {
 
         {/* CTA Section */}
         <div className="mt-16 premium-card p-8 text-center">
-          <h3 className="text-3xl font-bold text-white mb-4">Ready to Transform Your Business Online?</h3>
+          <h3 className="text-3xl font-bold text-white mb-4">Ready to Transform Your Smile?</h3>
           <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-            Let our expert team create a stunning website that will elevate your business and drive results. 
-            Contact us today to discuss your project requirements.
+            Let Dr. Yasser Khenniche at Golden Dental Clinic create a beautiful, healthy smile that will boost your confidence. 
+            Contact us today to schedule your consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="mailto:autonomy.owner@gmail.com" 
+              href="tel:0797339451" 
               className="btn-primary text-lg px-8 py-4"
             >
-              Start Your Project
+              Book Appointment
             </a>
             <a 
-              href="https://wa.me/+213797339451" 
+              href="https://www.instagram.com/dr_yasser_khenniche/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-secondary text-lg px-8 py-4"
             >
-              <span className="mr-2">💬</span>
-              WhatsApp Us
+              <span className="mr-2">📱</span>
+              Follow Us
             </a>
           </div>
         </div>

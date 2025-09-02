@@ -1,57 +1,42 @@
 const ContactPage = () => {
   const contactMethods = [
     {
-      icon: "📧",
-      title: "Email Us",
-      value: "autonomy.owner@gmail.com",
-      description: "Send us your project requirements",
-      link: "mailto:autonomy.owner@gmail.com",
-      color: "bg-blue-500/20 border-blue-500/30"
-    },
-    {
       icon: "📞",
       title: "Call Us",
       value: "0797339451",
-      description: "Speak directly with our team",
+      description: "Book your dental appointment",
       link: "tel:+213797339451",
       color: "bg-green-500/20 border-green-500/30"
     },
     {
-      icon: "💬",
-      title: "WhatsApp",
-      value: "0797339451",
-      description: "Quick chat about your project",
-      link: "https://wa.me/+213797339451",
-      color: "bg-green-500/20 border-green-500/30"
+      icon: "📍",
+      title: "Visit Us",
+      value: "Cité les annassers 2, Kouba",
+      description: "Our dental clinic location",
+      link: "#",
+      color: "bg-blue-500/20 border-blue-500/30"
     },
     {
-      icon: "📍",
-      title: "Location",
-      value: "Algeria",
-      description: "Serving clients nationwide",
-      link: "#",
+      icon: "📱",
+      title: "Instagram",
+      value: "@dr_yasser_khenniche",
+      description: "Follow for dental tips and updates",
+      link: "https://www.instagram.com/dr_yasser_khenniche/",
       color: "bg-purple-500/20 border-purple-500/30"
+    },
+    {
+      icon: "🕰",
+      title: "Hours",
+      value: "Mon-Sat 9AM-7PM",
+      description: "Clinic operating hours",
+      link: "#",
+      color: "bg-amber-500/20 border-amber-500/30"
     }
   ]
 
 
   return (
     <section id="contact-page" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Video Background */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover transform scale-x-[-1] rotate-45"
-        >
-          <source src="/pics/fliphero.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        {/* Video overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/50"></div>
-      </div>
 
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10 z-5">
@@ -64,20 +49,20 @@ const ContactPage = () => {
         <div className="max-w-7xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 glass-effect border border-blue-500/30 rounded-full premium-text text-sm font-medium mb-8">
-            <span className="mr-2">📞</span>
-            Get In Touch - We're Here to Help
+            <span className="mr-2">🦷</span>
+            Contact Golden Dental Clinic
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Contact
-            <span className="block premium-text">Our Agency</span>
+            <span className="block premium-text">Dr. Yasser Khenniche</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Ready to start your web development project? Get in touch with our agency. 
-            We're here to discuss your needs and bring your vision to life.
+            Ready to transform your smile? Get in touch with Golden Dental Clinic. 
+            Dr. Yasser Khenniche is here to discuss your dental needs and create your perfect smile.
           </p>
 
           {/* Contact Methods Grid */}
@@ -142,36 +127,36 @@ const ContactPage = () => {
                 </div>
 
                 <div>
-                  <label className="block text-white font-semibold mb-2">Project Type</label>
+                  <label className="block text-white font-semibold mb-2">Service Type</label>
                   <select className="w-full px-4 py-3 bg-slate-800/50 border border-blue-500/30 rounded-lg text-white focus:outline-none focus:border-blue-500">
-                    <option value="">Select project type</option>
-                    <option value="clinic">Clinic Website</option>
-                    <option value="travel">Travel Agency Website</option>
-                    <option value="real-estate">Real Estate Website</option>
-                    <option value="ecommerce">E-commerce Website</option>
-                    <option value="custom">Custom Website</option>
-                    <option value="other">Other</option>
+                    <option value="">Select service type</option>
+                    <option value="checkup">General Checkup</option>
+                    <option value="cleaning">Teeth Cleaning</option>
+                    <option value="cosmetic">Cosmetic Dentistry</option>
+                    <option value="restorative">Restorative Treatment</option>
+                    <option value="orthodontics">Orthodontics</option>
+                    <option value="emergency">Emergency Care</option>
                   </select>
                 </div>
 
                 <div>
-                  <label className="block text-white font-semibold mb-2">Budget Range</label>
+                  <label className="block text-white font-semibold mb-2">Preferred Time</label>
                   <select className="w-full px-4 py-3 bg-slate-800/50 border border-blue-500/30 rounded-lg text-white focus:outline-none focus:border-blue-500">
-                    <option value="">Select budget range</option>
-                    <option value="100k-200k">100,000 - 200,000 DA</option>
-                    <option value="200k-400k">200,000 - 400,000 DA</option>
-                    <option value="400k-600k">400,000 - 600,000 DA</option>
-                    <option value="600k+">600,000+ DA</option>
-                    <option value="discuss">Let's discuss</option>
+                    <option value="">Select preferred time</option>
+                    <option value="morning">Morning (9AM - 12PM)</option>
+                    <option value="afternoon">Afternoon (12PM - 5PM)</option>
+                    <option value="evening">Evening (5PM - 7PM)</option>
+                    <option value="weekend">Weekend Available</option>
+                    <option value="flexible">Flexible Schedule</option>
                   </select>
                 </div>
 
                 <div>
-                  <label className="block text-white font-semibold mb-2">Project Description</label>
+                  <label className="block text-white font-semibold mb-2">Dental Concerns</label>
                   <textarea
                     rows={4}
                     className="w-full px-4 py-3 bg-slate-800/50 border border-blue-500/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500"
-                    placeholder="Tell us about your project requirements, goals, and any specific features you need..."
+                    placeholder="Please describe any dental concerns, pain, or specific treatments you're interested in..."
                   ></textarea>
                 </div>
 
@@ -179,7 +164,7 @@ const ContactPage = () => {
                   type="submit"
                   className="btn-primary w-full text-lg py-4"
                 >
-                  🚀 Send Message
+                  🚀 Book Appointment
                 </button>
               </form>
             </div>
@@ -197,7 +182,7 @@ const ContactPage = () => {
                     <div>
                       <h4 className="text-white font-semibold mb-1">Location</h4>
                       <p className="text-gray-300 text-sm">
-                        Algeria - Serving clients nationwide
+                        Cité les annassers 2, Kouba, Algeria
                       </p>
                     </div>
                   </div>
@@ -209,7 +194,7 @@ const ContactPage = () => {
                     <div>
                       <h4 className="text-white font-semibold mb-1">Business Hours</h4>
                       <p className="text-gray-300 text-sm">
-                        Monday - Friday: 9:00 AM - 6:00 PM
+                        Monday - Saturday: 9:00 AM - 7:00 PM
                       </p>
                     </div>
                   </div>
@@ -221,7 +206,7 @@ const ContactPage = () => {
                     <div>
                       <h4 className="text-white font-semibold mb-1">Services</h4>
                       <p className="text-gray-300 text-sm">
-                        Custom websites, E-commerce, Booking systems
+                        General, Cosmetic, Restorative, Emergency Dentistry
                       </p>
                     </div>
                   </div>
@@ -241,23 +226,23 @@ const ContactPage = () => {
               </div>
 
               <div className="premium-gradient p-8 rounded-2xl shadow-2xl">
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">Why Choose Our Agency?</h3>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Why Choose Golden Dental Clinic?</h3>
                 <ul className="space-y-3 text-slate-900">
                   <li className="flex items-center">
                     <span className="mr-3">✓</span>
-                    Expert team of professional developers
+                    Experienced Dr. Yasser Khenniche
                   </li>
                   <li className="flex items-center">
                     <span className="mr-3">✓</span>
-                    Modern, responsive design approach
+                    Modern dental technology and techniques
                   </li>
                   <li className="flex items-center">
                     <span className="mr-3">✓</span>
-                    Complete project management
+                    Comprehensive dental care services
                   </li>
                   <li className="flex items-center">
                     <span className="mr-3">✓</span>
-                    Ongoing support and maintenance
+                    Personalized patient care and follow-up
                   </li>
                 </ul>
               </div>
@@ -270,55 +255,55 @@ const ContactPage = () => {
             <h2 className="text-3xl font-bold text-white text-center mb-8">Quick Contact Options</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <a 
-                href="mailto:autonomy.owner@gmail.com?subject=Project Inquiry" 
-                className="premium-card p-6 text-center hover:transform hover:scale-105 transition-all duration-300"
-              >
-                <div className="text-3xl mb-4">📧</div>
-                <h3 className="text-xl font-bold text-white mb-2">Email Us</h3>
-                <p className="text-gray-300 text-sm">Send us your project details</p>
-              </a>
-              
-              <a 
-                href="https://wa.me/+213797339451?text=Hi! I'm interested in your web development services. Can you tell me more?" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="premium-card p-6 text-center hover:transform hover:scale-105 transition-all duration-300"
-              >
-                <div className="text-3xl mb-4">💬</div>
-                <h3 className="text-xl font-bold text-white mb-2">WhatsApp</h3>
-                <p className="text-gray-300 text-sm">Quick chat with us</p>
-              </a>
-              
-              <a 
                 href="tel:+213797339451" 
                 className="premium-card p-6 text-center hover:transform hover:scale-105 transition-all duration-300"
               >
                 <div className="text-3xl mb-4">📞</div>
                 <h3 className="text-xl font-bold text-white mb-2">Call Us</h3>
-                <p className="text-gray-300 text-sm">Speak directly with us</p>
+                <p className="text-gray-300 text-sm">Book your appointment now</p>
+              </a>
+              
+              <a 
+                href="https://www.instagram.com/dr_yasser_khenniche/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="premium-card p-6 text-center hover:transform hover:scale-105 transition-all duration-300"
+              >
+                <div className="text-3xl mb-4">📱</div>
+                <h3 className="text-xl font-bold text-white mb-2">Instagram</h3>
+                <p className="text-gray-300 text-sm">Follow for dental tips</p>
+              </a>
+              
+              <a 
+                href="#" 
+                className="premium-card p-6 text-center hover:transform hover:scale-105 transition-all duration-300"
+              >
+                <div className="text-3xl mb-4">📍</div>
+                <h3 className="text-xl font-bold text-white mb-2">Visit Us</h3>
+                <p className="text-gray-300 text-sm">Kouba, Algeria location</p>
               </a>
             </div>
           </div>
 
           {/* CTA Section */}
           <div className="text-center">
-            <h3 className="text-3xl font-bold text-white mb-6">Ready to Start Your Project?</h3>
+            <h3 className="text-3xl font-bold text-white mb-6">Ready to Transform Your Smile?</h3>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Don't wait to bring your vision to life. Contact us today and let's create something amazing together.
+              Don't wait to achieve the perfect smile. Contact Golden Dental Clinic today and let Dr. Yasser Khenniche help you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="mailto:autonomy.owner@gmail.com?subject=Project Inquiry" 
+                href="tel:+213797339451" 
                 className="btn-primary text-lg px-8 py-4"
               >
-                🚀 Start Your Project
+                🚀 Book Appointment
               </a>
               <a 
                 href="/pricing" 
                 className="btn-secondary text-lg px-8 py-4"
               >
-                <span className="mr-2">💰</span>
-                View Pricing
+                <span className="mr-2">🦷</span>
+                View Services
               </a>
             </div>
           </div>

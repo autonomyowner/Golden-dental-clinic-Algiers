@@ -6,14 +6,14 @@ const Navbar = () => {
   const location = useLocation()
 
   return (
-    <nav className="fixed w-full z-50 glass-effect border-b border-yellow-500/30">
+    <nav className="fixed w-full z-50 glass-effect border-b border-amber-400/30">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div>
-              <h1 className="text-white font-bold text-xl">SITEDZ</h1>
-              <p className="premium-text text-xs">Web Development Agency</p>
+              <h1 className="text-white font-bold text-xl">Golden Dental Clinic</h1>
+              <p className="premium-text text-xs">Dr. Yasser Khenniche</p>
             </div>
           </div>
 
@@ -21,40 +21,40 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               to="/" 
-              className={`transition-colors ${location.pathname === '/' ? 'text-yellow-400' : 'text-white hover:text-yellow-400'}`}
+              className={`transition-colors ${location.pathname === '/' ? 'text-amber-400' : 'text-white hover:text-amber-400'}`}
             >
               Home
             </Link>
             <Link 
               to="/services" 
-              className={`transition-colors ${location.pathname === '/services' ? 'text-yellow-400' : 'text-white hover:text-yellow-400'}`}
+              className={`transition-colors ${location.pathname === '/services' ? 'text-amber-400' : 'text-white hover:text-amber-400'}`}
             >
               Services
             </Link>
             <Link 
               to="/pricing" 
-              className={`transition-colors ${location.pathname === '/pricing' ? 'text-yellow-400' : 'text-white hover:text-yellow-400'}`}
+              className={`transition-colors ${location.pathname === '/pricing' ? 'text-amber-400' : 'text-white hover:text-amber-400'}`}
             >
               Pricing
             </Link>
             <Link 
               to="/contact" 
-              className={`transition-colors ${location.pathname === '/contact' ? 'text-yellow-400' : 'text-white hover:text-yellow-400'}`}
+              className={`transition-colors ${location.pathname === '/contact' ? 'text-amber-400' : 'text-white hover:text-amber-400'}`}
             >
               Contact
             </Link>
             <a 
-              href="mailto:autonomy.owner@gmail.com" 
+              href="tel:0797339451" 
               className="btn-primary"
             >
-              Get Quote
+              Book Appointment
             </a>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white hover:text-yellow-400 transition-colors"
+            className="md:hidden text-white hover:text-amber-400 transition-colors"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMenuOpen ? (
@@ -68,41 +68,41 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden glass-effect border-t border-yellow-500/30">
+          <div className="md:hidden glass-effect border-t border-amber-400/30">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link 
                 to="/" 
-                className={`block px-3 py-2 transition-colors ${location.pathname === '/' ? 'text-yellow-400' : 'text-white hover:text-yellow-400'}`}
+                className={`block px-3 py-2 transition-colors ${location.pathname === '/' ? 'text-amber-400' : 'text-white hover:text-amber-400'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 to="/services" 
-                className={`block px-3 py-2 transition-colors ${location.pathname === '/services' ? 'text-yellow-400' : 'text-white hover:text-yellow-400'}`}
+                className={`block px-3 py-2 transition-colors ${location.pathname === '/services' ? 'text-amber-400' : 'text-white hover:text-amber-400'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
               <Link 
                 to="/pricing" 
-                className={`block px-3 py-2 transition-colors ${location.pathname === '/pricing' ? 'text-yellow-400' : 'text-white hover:text-yellow-400'}`}
+                className={`block px-3 py-2 transition-colors ${location.pathname === '/pricing' ? 'text-amber-400' : 'text-white hover:text-amber-400'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pricing
               </Link>
               <Link 
                 to="/contact" 
-                className={`block px-3 py-2 transition-colors ${location.pathname === '/contact' ? 'text-yellow-400' : 'text-white hover:text-yellow-400'}`}
+                className={`block px-3 py-2 transition-colors ${location.pathname === '/contact' ? 'text-amber-400' : 'text-white hover:text-amber-400'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
               </Link>
               <a 
-                href="mailto:autonomy.owner@gmail.com" 
+                href="tel:0797339451" 
                 className="block px-3 py-2 btn-primary text-center"
               >
-                Get Quote
+                Book Appointment
               </a>
             </div>
           </div>
