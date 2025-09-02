@@ -4,7 +4,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/src/assets/ozkan-guner-FPsaA37Uh_w-unsplash.jpg" 
+          src="/ozkan-guner-FPsaA37Uh_w-unsplash.jpg" 
           alt="Dental clinic background" 
           className="w-full h-full object-cover"
         />
@@ -44,7 +44,7 @@ const Hero = () => {
             <div className="premium-card p-6 relative overflow-hidden w-80 h-32">
               <div className="absolute inset-0 z-0">
                 <img 
-                  src="/src/assets/logo.jpg" 
+                  src="/logo.jpg" 
                   alt="Golden Dental Clinic Logo" 
                   className="w-full h-full object-cover"
                 />

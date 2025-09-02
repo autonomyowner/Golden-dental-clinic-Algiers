@@ -12,7 +12,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/src/assets/pexels-karolina-grabowska-4386464.jpg" 
+              src="/pexels-karolina-grabowska-4386464.jpg" 
               alt="Golden Dental Clinic Logo" 
               className="w-12 h-12 rounded-full object-cover border-2 border-amber-400/50"
             />
