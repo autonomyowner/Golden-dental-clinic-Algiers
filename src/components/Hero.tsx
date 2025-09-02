@@ -1,6 +1,17 @@
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/src/assets/ozkan-guner-FPsaA37Uh_w-unsplash.jpg" 
+          alt="Dental clinic background" 
+          className="w-full h-full object-cover"
+        />
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10 z-5">
         <div className="absolute top-20 left-20 w-32 h-32 bg-amber-400 rounded-full blur-3xl"></div>
@@ -28,19 +39,16 @@ const Hero = () => {
             Transform your smile into your most confident asset with modern dental technology and personalized care.
           </p>
 
-          {/* Stats */}
-          <div className="flex flex-wrap justify-center gap-8 mb-12">
-            <div className="text-center premium-card p-6">
-              <div className="text-3xl font-bold premium-text">2000+</div>
-              <div className="text-gray-400">Happy Patients</div>
-            </div>
-            <div className="text-center premium-card p-6">
-              <div className="text-3xl font-bold premium-text">10+</div>
-              <div className="text-gray-400">Years Experience</div>
-            </div>
-            <div className="text-center premium-card p-6">
-              <div className="text-3xl font-bold premium-text">100%</div>
-              <div className="text-gray-400">Patient Satisfaction</div>
+          {/* Logo */}
+          <div className="flex justify-center mb-12">
+            <div className="premium-card p-6 relative overflow-hidden w-80 h-32">
+              <div className="absolute inset-0 z-0">
+                <img 
+                  src="/src/assets/logo.jpg" 
+                  alt="Golden Dental Clinic Logo" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
 

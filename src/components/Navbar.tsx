@@ -10,7 +10,12 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/src/assets/pexels-karolina-grabowska-4386464.jpg" 
+              alt="Golden Dental Clinic Logo" 
+              className="w-12 h-12 rounded-full object-cover border-2 border-amber-400/50"
+            />
             <div>
               <h1 className="text-white font-bold text-xl">Golden Dental Clinic</h1>
               <p className="premium-text text-xs">Dr. Yasser Khenniche</p>
